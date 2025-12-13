@@ -54,6 +54,31 @@
         .whatsapp-float {
             animation: pulse-custom 2s infinite;
         }
+
+        /* --- CSS PERSONALIZADO PARA LOGOS --- */
+        /* Logo no Cabeçalho */
+        .logo-header {
+            height: 60px; /* Altura para celular */
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Logo no Rodapé */
+        .logo-footer {
+            height: 80px; /* Altura para celular */
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Ajustes para telas maiores (Desktop) */
+        @media (min-width: 768px) {
+            .logo-header {
+                height: 75px; /* Maior no desktop */
+            }
+            .logo-footer {
+                height: 100px; /* Maior no desktop */
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -66,9 +91,9 @@
     <!-- Header / Navbar -->
     <header class="bg-primary shadow-lg absolute w-full z-20">
         <div class="container mx-auto px-6 py-4 flex justify-center md:justify-start">
-            <!-- Logo Substituída por Imagem -->
+            <!-- Logo Substituída por Imagem com classe personalizada -->
             <div class="flex items-center gap-2">
-                <img src="https://i.ibb.co/tpPyqLB1/66f1e8e6-3084-47b4-b45a-b8ba2995fe31.png" alt="Logo ReVive Marketing - Topo" class="h-10 md:h-12 object-contain">
+                <img src="https://i.ibb.co/tpPyqLB1/66f1e8e6-3084-47b4-b45a-b8ba2995fe31.png" alt="Logo ReVive Marketing - Topo" class="logo-header">
             </div>
         </div>
     </header>
@@ -317,9 +342,9 @@
     <footer class="bg-primary text-white py-12">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
             
-            <!-- Logo -->
+            <!-- Logo Substituída por Imagem com classe personalizada -->
             <div class="flex items-center gap-2">
-                <img src="https://i.ibb.co/tpPyqLB1/66f1e8e6-3084-47b4-b45a-b8ba2995fe31.png" alt="Logo ReVive Marketing - Rodapé" class="h-12 md:h-16 object-contain">
+                <img src="https://i.ibb.co/tpPyqLB1/66f1e8e6-3084-47b4-b45a-b8ba2995fe31.png" alt="Logo ReVive Marketing - Rodapé" class="logo-footer">
             </div>
 
             <!-- Contact Info -->
