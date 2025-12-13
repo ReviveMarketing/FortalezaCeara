@@ -64,7 +64,7 @@
     </div>
 
     <!-- Header / Navbar -->
-    <header class="bg-primary shadow-lg">
+    <header class="bg-primary shadow-lg absolute w-full z-20">
         <div class="container mx-auto px-6 py-4 flex justify-center md:justify-start">
             <!-- Logo Placeholder (Texto estilizado como na imagem) -->
             <div class="flex items-center gap-2">
@@ -74,22 +74,23 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gray-900 text-white py-20 md:py-32">
-        <!-- Background Image com Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="<a href="https://ibb.co/P7C4QtR"><img src="https://i.ibb.co/XhJp8V9/Gemini-Generated-Image-clefqiclefqiclef.png" alt="Gemini-Generated-Image-clefqiclefqiclef" border="0" /></a>"
-        </div>
+    <!-- Hero Section Alterado -->
+    <!-- min-h-screen garante 100vh. bg-cover e bg-left-center posicionam a imagem. -->
+    <section class="relative w-full min-h-screen flex items-center text-white" 
+             style="background-image: url('https://i.ibb.co/XhJp8V9/Gemini-Generated-Image-clefqiclefqiclef.png'); background-size: cover; background-position: left center; background-repeat: no-repeat;">
         
-        <div class="container mx-auto px-6 relative z-10 text-center md:text-left">
+        <!-- Overlay Gradiente: Escuro na esquerda (para texto) -> Transparente na direita -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 md:to-transparent z-0"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center md:text-left pt-20">
             <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
                     Você sofreu qualquer tipo de acidente?
                 </h1>
-                <h2 class="text-xl md:text-2xl font-light mb-8 text-gray-200">
+                <h2 class="text-xl md:text-2xl font-light mb-8 text-gray-100 drop-shadow-md">
                     Você pode receber o pecúlio - auxílio acidente!
                 </h2>
-                <p class="text-base md:text-lg mb-10 text-gray-300 leading-relaxed max-w-2xl">
+                <p class="text-base md:text-lg mb-10 text-gray-200 leading-relaxed max-w-2xl drop-shadow-sm">
                     Se você sofreu um acidente e ficou com invalidez, receba seu Auxílio Acidente do INSS. Muitas pessoas perdem esse benefício por falta de informação. Não deixe isso acontecer com você!
                 </p>
                 
@@ -137,7 +138,7 @@
                 <!-- Card 3 -->
                 <div class="flex flex-col items-center">
                     <div class="w-full h-48 bg-gray-200 rounded-lg overflow-hidden mb-4">
-                        <img src=https://i.ibb.co/ZRYwQp2Q/depositphotos-7324571-stock-photo-braccio-e-polso-con-gesso.webp alt="Cadeira de rodas" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/ZRYwQp2Q/depositphotos-7324571-stock-photo-braccio-e-polso-con-gesso.webp" alt="Cadeira de rodas" class="w-full h-full object-cover">
                     </div>
                     <p class="text-lg font-medium">Quem ficou com sequelas</p>
                 </div>
@@ -349,6 +350,7 @@
 
 </body>
 </html>
+
 
 
 
