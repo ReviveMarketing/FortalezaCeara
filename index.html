@@ -56,27 +56,29 @@
         }
 
         /* --- CSS PERSONALIZADO PARA LOGOS --- */
+        
         /* Logo no Cabeçalho */
         .logo-header {
-            height: 60px; /* Altura para celular */
+            height: 90px; /* <-- AUMENTAR/DIMINUIR ESTE VALOR para ajustar tamanho no topo (Celular) */
             width: auto;
             object-fit: contain;
         }
 
         /* Logo no Rodapé */
         .logo-footer {
-            height: 80px; /* Altura para celular */
+            height: 120px; /* <-- AUMENTAR/DIMINUIR ESTE VALOR para ajustar tamanho no rodapé (Celular) */
             width: auto;
             object-fit: contain;
+            margin-bottom: 20px;
         }
 
         /* Ajustes para telas maiores (Desktop) */
         @media (min-width: 768px) {
             .logo-header {
-                height: 75px; /* Maior no desktop */
+                height: 100px; /* <-- AUMENTAR se quiser a logo ainda maior no PC */
             }
             .logo-footer {
-                height: 100px; /* Maior no desktop */
+                height: 140px; /* <-- AUMENTAR se quiser a logo ainda maior no PC */
             }
         }
     </style>
@@ -106,7 +108,8 @@
         <!-- Overlay Gradiente: Escuro na esquerda (para texto) -> Transparente na direita -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 md:to-transparent z-0"></div>
         
-        <div class="container mx-auto px-6 relative z-10 text-center md:text-left pt-20">
+        <!-- Aumentei o padding-top (pt-44) para compensar a logo maior no cabeçalho -->
+        <div class="container mx-auto px-6 relative z-10 text-center md:text-left pt-44">
             <div class="max-w-3xl">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
                     Você sofreu qualquer tipo de acidente?
@@ -373,6 +376,7 @@
 
 </body>
 </html>
+
 
 
 
