@@ -81,6 +81,11 @@
                 height: 140px; /* <-- AUMENTAR se quiser a logo ainda maior no PC */
             }
         }
+
+        /* Sombra de Texto Personalizada para Leitura no Hero */
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -103,25 +108,26 @@
     <!-- Hero Section Alterado -->
     <!-- min-h-screen garante 100vh. bg-cover e bg-left-center posicionam a imagem. -->
     <section class="relative w-full min-h-screen flex items-center text-white" 
-             style="background-image: url('https://i.ibb.co/XhJp8V9/Gemini-Generated-Image-clefqiclefqiclef.png'); background-size: cover; background-position: left center; background-repeat: no-repeat;">
+             style="background-image: url('https://i.ibb.co/S4QBLzvy/Gemini-Generated-Image-m0ut99m0ut99m0ut.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
         
-        <!-- Overlay Gradiente: Escuro na esquerda (para texto) -> Transparente na direita -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 md:to-transparent z-0"></div>
+        <!-- Overlay Gradiente: Escuro na esquerda (para texto) -> Suave na direita -->
+        <!-- Ajustei para 'via-black/70' para garantir leitura mesmo se a imagem for clara no meio -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-black/20 md:to-transparent z-0"></div>
         
         <!-- Aumentei o padding-top (pt-44) para compensar a logo maior no cabeçalho -->
         <div class="container mx-auto px-6 relative z-10 text-center md:text-left pt-44">
             <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight text-shadow-custom">
                     Você sofreu qualquer tipo de acidente?
                 </h1>
-                <h2 class="text-xl md:text-2xl font-light mb-8 text-gray-100 drop-shadow-md">
+                <h2 class="text-xl md:text-2xl font-light mb-8 text-gray-100 text-shadow-custom">
                     Você pode receber o pecúlio - auxílio acidente!
                 </h2>
-                <p class="text-base md:text-lg mb-10 text-gray-200 leading-relaxed max-w-2xl drop-shadow-sm">
+                <p class="text-base md:text-lg mb-10 text-gray-100 leading-relaxed max-w-2xl text-shadow-custom font-medium">
                     Se você sofreu um acidente e ficou com invalidez, receba seu Auxílio Acidente do INSS. Muitas pessoas perdem esse benefício por falta de informação. Não deixe isso acontecer com você!
                 </p>
                 
-                <a href="https://wa.me/5585988361676" target="_blank" class="inline-flex items-center gap-3 bg-cta hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg text-lg">
+                <a href="https://wa.me/5585988361676" target="_blank" class="inline-flex items-center gap-3 bg-cta hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg text-lg border-2 border-transparent hover:border-white">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Descubra agora se você tem direito!
                 </a>
@@ -375,7 +381,8 @@
     </a>
 
 </body>
-</html>
+    </html>
+
 
 
 
